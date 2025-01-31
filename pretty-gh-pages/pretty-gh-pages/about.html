@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Add Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://www.example.com/your-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 100px 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 50px;
+      color: #fcbf49;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    /* About Page */
+    .about-page {
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-page h2 {
+      color: #fcbf49;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .about-page p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Makeup Types Section */
+    .makeup-types {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      margin-top: 30px;
+    }
+
+    .makeup-types h3 {
+      color: #fcbf49;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .makeup-types ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .makeup-types li {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    /* Skin Types Section */
+    .skin-types {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      margin-top: 30px;
+    }
+
+    .skin-types h3 {
+      color: #fcbf49;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .skin-types p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer a {
+      color: #fcbf49;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .about-page, .makeup-types, .skin-types {
+        padding: 30px;
+      }
+    }
+    
+    header:hover{
+            transform: scale(1.3);
+            box-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+    }
+
+   
+  </style>
+</head>
+<body>
+  <!-- Updated Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shehnaz Makeovers</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <!-- <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>  -->
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Makeup</a></li>  
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>   -->
+          <li class="nav-item"><a href="services.html" class="nav-link">Pricing</a></li> 
+
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Cosmetics and Beauty</h1>
+    <p>Enhance your beauty with the right products and knowledge!</p>
+  </header>
+
+  <!-- About Section -->
+  <div id="about" class="about-page">
+    <h2>About Cosmetics</h2>
+    <p>Cosmetics are care substances used to enhance the appearance or odor of the human body. They are generally mixtures of chemical compounds, some being derived from natural sources, many being synthetic.</p>
+    <p>The word cosmetics derives from the Greek κοσμητική τέχνη (kosmetikē tekhnē), meaning "technique of dress and ornament", from κοσμητικός (kosmētikos), "skilled in ordering or arranging" and that from κόσμος (kosmos), meaning amongst others "order" and "ornament".</p>
+  </div>
+
+  <!-- Makeup Types Section -->
+  <div id="makeup" class="makeup-types">
+    <h3>Makeup Types</h3>
+    <ul>
+      <li>Primer</li>
+      <li>Lipgloss</li>
+      <li>Concealer</li>
+      <li>Foundation</li>
+      <li>Face Powder</li>
+      <li>Rouge</li>
+      <li>Contour Powder/Creams</li>
+      <li>Highlight</li>
+      <li>Bronzer</li>
+      <li>Mascara</li>
+      <li>Eyebrow Pencils/Creams</li>
+      <li>Nail Polish</li>
+      <li>Setting Spray</li>
+      <li>Eyeliner</li>
+    </ul>
+  </div>
+
+  <!-- Skin Types Section -->
+  <div id="skin" class="skin-types">
+    <h3>Skin Types</h3>
+    <p>There are five basic skin types, including:</p>
+    <ul>
+      <li><strong>Normal Skin:</strong> Ideal balance between oil and moisture content.</li>
+      <li><strong>Dry Skin:</strong> Prone to flaking and wrinkles.</li>
+      <li><strong>Oily Skin:</strong> Prone to blackheads and acne.</li>
+      <li><strong>Combination Skin:</strong> Mix of oily and dry skin.</li>
+      <li><strong>Sensitive Skin:</strong> Prone to irritation and redness.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; All rights reserved by Shehnaaz makeovers </p>
+    <a href="#">Contact Us</a>
+  </footer>
+
+  <!-- Add Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

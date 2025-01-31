@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Add Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #343a40; /* Dark background */
+            color: #f8f9fa; /* Light text for contrast */
+			font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #524a4a;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .flexbox-item {
+            background-color: #495057;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            width: 18%;
+        }
+
+        .flexbox-item:hover {
+            
+        }
+
+        .flexbox-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .flexbox-item h4 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #ffc107; /* Gold color for headings */
+        }
+
+        .flexbox-item p {
+            margin-top: 10px;
+            color: #e9ecef;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #212529;
+            padding: 20px 0;
+            text-align: center;
+            color: #f8f9fa;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        /* For large screens */
+        @media (min-width: 1200px) {
+            .flexbox-item {
+                width: 18%; /* 5 items in a row */
+            }
+        }
+
+        /* For medium to large screens */
+        @media (max-width: 1200px) {
+            .flexbox-item {
+                width: 23%; /* 4 items in a row */
+            }
+        }
+
+        /* For medium screens */
+        @media (max-width: 992px) {
+            .flexbox-item {
+                width: 45%; /* 2 items in a row */
+            }
+        }
+
+        /* For smaller screens */
+        @media (max-width: 768px) {
+            .flexbox-item {
+                width: 100%; /* 1 item in a row */
+            }
+        }
+    </style>
+</head>
+<body>
+	
+	  <!-- Add Bootstrap JS and dependencies -->
+	 
+	
+    <!-- Navbar remains the same as requested -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Shehnaz Makeovers</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <!-- <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>  -->
+	          <li class="nav-item"><a href="gallery.html" class="nav-link">Makeup</a></li>
+	          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>   -->
+			  <li class="nav-item"><a href="services.html" class="nav-link">Pricing</a></li> 
+
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	 
+	
+    <!-- Flexbox section with images, headings, and content summaries -->
+    <div class="flex-container">
+        <!-- Flexbox 1 -->
+        <div class="flexbox-item">
+            <img src="images/makeup/IMG-20250131-WA0066.jpg" alt="Image 1">
+            <h4>Enagagement Makeup</h4>
+            <p>Engagement Makeup: A flawless, radiant look designed to highlight your natural beauty on your special day. Featuring a perfect blend of foundation, contouring, and eye makeup for a memorable, photo-ready appearance. Ideal for making your engagement moments unforgettable.
+            </p>
+			<h3>Price : 8000Rs.</h3>
+        </div>
+
+       
+        <!-- Flexbox 3 -->
+        <div class="flexbox-item">
+            <img src="images/makeup/IMG-20250131-WA0053.jpg" alt="Image 3">
+            <h4>Reception Makeup</h4>
+            <p>Reception Makeup: A glamorous and sophisticated look, perfect for your reception night. This makeup focuses on creating a striking, long-lasting finish with bold eye makeup, a glowing complexion, and a touch of elegance to ensure you shine all evening. Ideal for making a grand entrance.</p>
+			<h3>Price : 10000Rs.</h3>
+		</div>
+
+       
+        <!-- Flexbox 5 -->
+        <div class="flexbox-item">
+            <img src="images/makeup/IMG-20250131-WA0055.jpg" alt="Image 5">
+            <h4>Bridal Makeup</h4>
+            <p>Bridal Makeup: A sophisticated and flawless look that enhances your natural beauty on your big day. It includes a perfect base, soft yet striking eye makeup, and long-lasting lip color, ensuring you look radiant and picture-perfect for every moment of your wedding.</p>
+			<h3>Price : 20000Rs.</h3>
+		</div>
+
+        <!-- Flexbox 6 (New) -->
+        <div class="flexbox-item">
+            <img src="images/makeup/IMG-20250131-WA0056.jpg" alt="Image 6">
+            <h4>Air Brush Makeup</h4>  
+            <p>Airbrush Makeup: A lightweight, flawless makeup technique that creates a smooth, airbrushed finish. Ideal for long-lasting wear, it provides a natural, even complexion, perfect for weddings or events. The airbrush application ensures a lightweight feel while maintaining a radiant, picture-perfect look throughout the day.</p>
+			<h3>Price : 25000Rs.</h3>
+		</div>
+
+       
+
+        <!-- Flexbox 8 (New) -->
+        <div class="flexbox-item">
+            <img src="images/makeup/partymakeup.jpg" alt="Image 8">
+            <h4>Party Makeup</h4>  
+            <p>Party Makeup: A fun and vibrant look designed to make you stand out at any celebration. With bold eyes, defined features, and a pop of color on the lips, this makeup creates a lively, glamorous appearance that lasts all night, ensuring you shine at every event.</p>
+      			<h3>Price : 5000Rs.</h3>
+		</div>
+
+       
+
+       
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  
